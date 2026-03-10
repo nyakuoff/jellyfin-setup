@@ -1,0 +1,59 @@
+@import url("https://cdn.jsdelivr.net/gh/lscambo13/ElegantFin@main/Theme/ElegantFin-jellyfin-theme-build-latest-minified.css");
+
+/* Skip Button */
+@import url("https://cdn.jsdelivr.net/gh/intro-skipper/intro-skipper-css@main/skip-button.min.css");
+
+/* Color override */
+:root {
+    /* Gradient points */
+    --darkerGradientPoint: hsla(220, 8%, 6%, 1);
+    --darkerGradientPointAlpha: hsla(220, 8%, 6%, 0.88);
+
+    --lighterGradientPoint: hsla(220, 7%, 11%, 1);
+    --lighterGradientPointAlpha: hsla(220, 7%, 11%, 0.88);
+
+    /* Header / drawer */
+    --headerColor: hsla(220, 7%, 12%, 0.8);
+    --drawerColor: hsla(220, 7%, 9%, 0.92);
+
+    --headerColorGradient:
+        linear-gradient(
+            180deg,
+            hsla(220, 7%, 12%, 0.95) 30%,
+            55%,
+            transparent 90%
+        );
+
+    /* Borders */
+    --borderColor: hsla(220, 5%, 32%, 1);
+    --darkerBorderColor: hsla(220, 6%, 22%, 1);
+    --lighterBorderColor: hsla(0, 0%, 100%, 0.16);
+
+    /* Selectors */
+    --selectorBackgroundColor: hsla(220, 6%, 26%, 1);
+    --selectorBackgroundColorAlpha: hsla(220, 6%, 26%, 0.5);
+
+    /* Buttons */
+    --btnMiniPlayColor: hsla(220, 8%, 6%, 0.85);
+    --btnMiniPlayBorderColor: hsla(220, 6%, 34%, 0.85);
+
+    /* Extra button cards */
+    --extraCardButtonsVisibility: block;
+
+    /* Skip button timing */
+    --skip-hide-duration: 10s;
+}
+
+/* Qt 5 layout compatibility fallback */
+@supports not selector(:has(*)) {
+  .layout-desktop .detailPageWrapperContainer .vertical-list .listItem-largeImage {
+    display: grid !important;
+    margin-bottom: 0 !important;
+  }
+
+  .layout-desktop .detailPageWrapperContainer .vertical-list {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(min(26rem, 100%), 1fr)) !important;
+    gap: var(--itemColumnGap, 0.75rem) !important;
+  }
+}
