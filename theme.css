@@ -57,3 +57,10 @@
     gap: var(--itemColumnGap, 0.75rem) !important;
   }
 }
+
+/* Homepage section offset fix */
+@media (max-width: 1600px) {
+  .homePage .homeSectionsContainer > .verticalSection:first-child {
+    margin-top: clamp(40px, 5vw, 80px) !important;
+  }
+}
