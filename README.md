@@ -18,6 +18,9 @@ In Jellyfin, go to **Dashboard → Branding** and add:
 <details>
 <summary><strong>Provider Libraries (<code>provider-libraries.js</code>)</strong></summary>
 
+![providers](assets/screenshots/providers.png)
+![provider-page](assets/screenshots/provider-page.png)
+
 Install the JS Injector plugin, go to **Dashboard → JS Injector** and add:
 
 ```js
