@@ -1,6 +1,6 @@
 # Jellyfin Setup
 
-Custom Jellyfin theme and provider library injections.
+Some of my personal jellyfin files
 
 ## Usage
 
