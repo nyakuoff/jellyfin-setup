@@ -42,6 +42,9 @@
 
     /* Skip button timing */
     --skip-hide-duration: 10s;
+
+    /* Remove card hover effect */
+    --cardHoverEffect: none;
 }
 
 /* Qt 5 layout compatibility fallback */
