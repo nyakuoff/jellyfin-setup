@@ -4,7 +4,8 @@ Custom Jellyfin theme and provider library injections.
 
 ## Usage
 
-### Theme (`theme.css`)
+<details>
+<summary><strong>Theme (<code>theme.css</code>)</strong></summary>
 
 In Jellyfin, go to **Dashboard → Branding** and add:
 
@@ -12,7 +13,10 @@ In Jellyfin, go to **Dashboard → Branding** and add:
 @import url("https://cdn.jsdelivr.net/gh/nyakuoff/jellyfin-setup@fa91667/theme.css");
 ```
 
-### Provider Libraries (`provider-libraries.js`)
+</details>
+
+<details>
+<summary><strong>Provider Libraries (<code>provider-libraries.js</code>)</strong></summary>
 
 Install the JS Injector plugin, go to **Dashboard → JS Injector** and add:
 
@@ -28,13 +32,16 @@ Install the JS Injector plugin, go to **Dashboard → JS Injector** and add:
 })();
 ```
 
+</details>
+
 ---
 
 <!-- AGENT_INSTRUCTIONS_START
 When the user changes theme.css or provider-libraries.js and pushes a new commit:
 1. Get the new short commit hash (first 7 chars of the latest commit on main).
-2. Update the @import URL in the Theme section: replace the hash after `@` in `jellyfin-setup@<hash>/theme.css`.
-3. Update the `url` constant in the Provider Libraries section: replace the hash after `@` in `jellyfin-setup@<hash>/provider-libraries.js`.
+2. Update the @import URL inside the Theme <details> block: replace the hash after `@` in `jellyfin-setup@<hash>/theme.css`.
+3. Update the `url` constant inside the Provider Libraries <details> block: replace the hash after `@` in `jellyfin-setup@<hash>/provider-libraries.js`.
 4. Both hashes can differ — use the commit that last changed each respective file if the user specifies, otherwise use the same latest commit hash for both.
-5. Do not change anything else in this file.
+5. Snippets are wrapped in <details><summary>...</summary>...</details> — collapsed by default. Do not remove or alter that structure.
+6. Do not change anything else in this file.
 AGENT_INSTRUCTIONS_END -->
